@@ -1,1 +1,11 @@
+DELIMITER $$
+CREATE TRIGGER camisa_correta BEFORE INSERT ON jogadores
+FOR EACH ROW
+BEGIN
+    IF NEW.camisa < 1 OR NEW.camisa > 24 THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Erro: Número de camisa inválido';
+    END IF;
+END $$
+DELIMITER ;
+
 

@@ -1,0 +1,75 @@
+select clube.nome, estadio.nome, estadio.capacidade, estadio.localizacao
+from clube, estadio;
+
+SELECT *
+FROM (
+  SELECT 'Jogador' AS tipo, id_jogador AS id, nome, TIMESTAMPDIFF(YEAR, data_nascimento, CURDATE()) AS idade
+  FROM Jogadores
+  UNION ALL
+  SELECT 'Funcionario' AS tipo, id_funcionario AS id, nome, TIMESTAMPDIFF(YEAR, data_nascimento, CURDATE()) AS idade
+  FROM Funcionarios
+  UNION ALL
+  SELECT 'Diretor' AS tipo, id_diretor AS id, nome, TIMESTAMPDIFF(YEAR, data_nascimento, CURDATE()) AS idade
+  FROM Diretoria
+  UNION ALL
+  SELECT 'Membro da Comissão Técnica' AS tipo, id_membro AS id, nome, TIMESTAMPDIFF(YEAR, data_nascimento, CURDATE()) AS idade
+  FROM ComissaoTecnica
+) AS pessoas
+WHERE idade < 30;
+
+
+SELECT AVG(TIMESTAMPDIFF(YEAR, data_nascimento, CURDATE())) AS idade_media_jogadores
+FROM Jogadores;
+
+
+SELECT adversario, SUM(placar_time_visitante) AS gols_sofridos
+FROM Partidas
+GROUP BY adversario
+ORDER BY gols_sofridos DESC
+LIMIT 1;
+
+
+SELECT SUM(placar_time_casa) AS gols_marcados
+FROM Partidas
+WHERE id_clube = 1;
+
+
+SELECT nome, data_nascimento, 'Jogador' AS cargo
+FROM Jogadores
+WHERE MONTH(data_nascimento) = 7
+UNION ALL
+SELECT nome, data_nascimento, 'Comissão Técnica' AS cargo
+FROM ComissaoTecnica
+WHERE MONTH(data_nascimento) = 7
+UNION ALL
+SELECT nome, data_nascimento, 'Diretoria' AS cargo
+FROM Diretoria
+WHERE MONTH(data_nascimento) = 7
+UNION ALL
+SELECT nome, data_nascimento, 'Funcionário' AS cargo
+FROM Funcionarios
+WHERE MONTH(data_nascimento) = 7;
+
+
+SELECT jogadores.nome, jogadores.nacionalidade
+FROM jogadores
+WHERE jogadores.nacionalidade <> 'Brasileiro' AND jogadores.nacionalidade <> 'Brasileira'
+UNION
+SELECT comissaotecnica.nome, comissaotecnica.nacionalidade
+FROM comissaotecnica
+WHERE comissaotecnica.nacionalidade <> 'Brasileiro' AND comissaotecnica.nacionalidade <> 'Brasileira'
+
+
+SELECT jogadores.nome AS jogador, comissaotecnica.nome AS tecnico, partidas.data, partidas.local
+FROM jogadores
+JOIN partidas ON jogadores.clube_id = partidas.id_clube
+JOIN comissaotecnica ON comissaotecnica.clube_id = partidas.id_clube
+WHERE jogadores.posicao = 'Atacante' AND comissaotecnica.cargo = 'Técnico'
+ORDER BY partidas.data DESC
+LIMIT 5;
+
+
+SELECT jogadores.email
+FROM jogadores
+WHERE (jogadores.posicao = 'Atacante' OR jogadores.posicao = 'Meio Campo')
+  AND DATEDIFF(CURDATE(), jogadores.data_nascimento) > 30 * 365.25; 

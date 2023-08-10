@@ -1,0 +1,192 @@
+INSERT INTO Clube (id_clube, nome, endereco) VALUES (1, 'Santa Teresa', 'Itaparica, 122');));
+
+INSERT INTO Diretoria (id_diretor, nome, cargo, clube_id, data_nascimento, email, endereco,
+nacionalidade)
+VALUES
+ (1, 'João Silva', 'Presidente', 1, '1980-01-01', 'joao@gmail.com', 'Rua Enseada Carioca, 456',
+'Brasileiro'),
+ (2, 'Maria Santos', 'Vice-Presidente', 1, '1985-02-02', 'maria@hotmail.com', 'Rua Nova, 456',
+'Brasileira'),
+ (3, 'Carlos Oliveira', 'Diretor Financeiro', 1, '1990-03-03', 'carlos@yahoo.com', 'Rua Itaciba, 456',
+'Brasileiro'),
+ (4, 'Ana Costa', 'Diretora de Marketing', 1, '1983-04-04', 'ana@gmail.com', 'Rua Ponte Fina, 456',
+'Brasileira'),
+ (5, 'Pedro Souza', 'Diretor Técnico', 1, '1982-05-05', 'pedro@hotmail.com', 'Aveninda Luciano, 456',
+'Brasileiro'),
+ (6, 'Luciana Silva', 'Diretora de Comunicação', 1, '1988-06-06', 'luciana@yahoo.com', 'Rua Justino,
+456', 'Brasileira'),
+ (7, 'Rafael Santos', 'Diretor de Operações', 1, '1981-07-07', 'rafael@gmail.com', 'Rua Oliveiras, 456',
+'Brasileiro'),
+ (8, 'Mariana Oliveira', 'Diretora Social', 1, '1987-08-08', 'mariana@hotmail.com', 'Rua BeijaFlores,
+456', 'Brasileira'),
+ (9, 'Gustavo Costa', 'Diretor Jurídico', 1, '1984-09-09', 'gustavo@yahoo.com', 'Rua Coqueiral, 456',
+'Brasileiro'),
+ (10, 'Sandra Souza', 'Diretora de Recursos Humanos', 1, '1986-10-10', 'sandra@gmail.com', 'Rua
+Santos, 456', 'Brasileira');
+
+
+INSERT INTO Funcionarios (id_funcionario, nome, cargo, clube_id, data_nascimento, email,
+endereco, nacionalidade)
+VALUES
+ (1, 'Pedro Mendes', 'Gerente', 1, '1980-01-01', 'pedro.mendes@gmail.com', 'Rua Santos, 123',
+'Brasileiro'),
+ (2, 'Camila Oliveira', 'Analista', 1, '1985-02-02', 'camila.oliveira@hotmail.com', 'Rua Jose Pinheiro,
+456', 'Brasileira'),
+ (3, 'Lucas Rodrigues', 'Assistente', 1, '1990-03-03', 'lucas.rodrigues@yahoo.com', 'Rua Italia, 789',
+'Brasileiro'),
+ (4, 'Mariana Costa', 'Secretária', 1, '1983-04-04', 'mariana.costa@gmail.com', 'Rua Nova Holanda,
+1011', 'Brasileira'),
+ (5, 'Rafaela Souza', 'Analista de Desempenho', 1, '1982-05-05', 'rafaela.souza@hotmail.com', 'Rua
+Espanha, 1213', 'Brasileira'),
+ (6, 'Leonardo Silva', 'Preparador Físico', 1, '1988-06-06', 'leonardo.silva@yahoo.com', 'Rua
+Portuguesa, 1415', 'Brasileiro'),
+ (7, 'Gustavo Santos', 'Nutricionista', 1, '1981-07-07', 'gustavo.santos@gmail.com', 'Rua Franca
+Nova, 1617', 'Brasileiro'),
+ (8, 'Carolina Oliveira', 'Psicóloga', 1, '1987-08-08', 'carolina.oliveira@yahoo.com', 'Rua Santa
+Teresa, 1819', 'Brasileira'),
+ (9, 'Larissa Costa', 'Recrutadora', 1, '1984-09-09', 'larissa.costa@gmail.com', 'Rua Jardim da
+Montanha, 2021', 'Brasileira'),
+ (10, 'Fernando Lima', 'Supervisor Técnico', 1, '1986-10-10', 'fernando.lima@hotmail.com', 'Rua dos
+Cachorro, 2223', 'Brasileiro'),
+ (11, 'Juliana Santos', 'Assessor de Imprensa', 1, '1978-11-11', 'juliana.santos@yahoo.com',
+'Centro, 2425', 'Brasileira'),
+ (12, 'André Almeida', 'Auxiliar Técnico', 1, '1992-12-12', 'andre.almeida@gmail.com', 'Rua São
+Pedro, 2627', 'Brasileiro'),
+ (13, 'Carla Martins', 'Fisioterapeuta', 1, '1989-01-13', 'carla.martins@hotmail.com', 'Rua da Lama,
+2829', 'Brasileira'),
+ (14, 'Henrique Oliveira', 'Massagista', 1, '1991-02-14', 'henrique.oliveira@yahoo.com', 'Rua
+Pinhamonhagaba, 3031', 'Brasileira'),
+ (15, 'Laura Fernandes', 'Médica', 1, '1980-03-15', 'laura.fernandes@gmail.com', 'Rua Italo Franco,
+3233', 'Brasileira');
+
+
+
+ INSERT INTO ComissaoTecnica (id_membro, nome, cargo, clube_id, data_nascimento, email,
+endereco, nacionalidade)
+VALUES
+ (1, 'José da Silva', 'Treinador Principal', 1, '1975-01-01', 'jose.silva@gmail.com', 'Rua Jose de
+Anchieta, 123', 'Brasileiro'),
+ (2, 'John Smith', 'Treinador Assistente', 1, '1980-02-02', 'john.smith@gmail.com', 'Rua Domingos,
+456', Ingles),
+ (3, 'Luiz Rodrigues', 'Preparador Físico', 1, '1985-03-03', 'luiz.rodrigues@hotmail.com', 'Rua
+Presidente Kennedy, 789', 'Brasileiro'),
+ (4, 'Carlos Fernandes', 'Treinador de Goleiros', 1, '1983-04-04', 'carlos.fernandes@yahoo.com',
+'Rua João Goulart, 1011', 'Brasileiro'),
+ (5, 'Anna Müller', 'Analista Tático', 1, '1982-05-05', 'anna.muller@gmail.com', 'Rua Justinos, 1213',
+Alemã),
+ (6, 'Pedro Oliveira', 'Fisioterapeuta', 1, '1988-06-06', 'pedro.oliveira@yahoo.com', 'Rua Nova Venda,
+1415', 'Brasileiro'),
+ (7, 'Márcio Gomes', 'Preparador de Atletas', 1, '1981-07-07', 'marcio.gomes@hotmail.com', 'Rua
+Aribiri, 1617', 'Brasileiro'),
+ (8, 'Sofia Torres', 'Nutricionista', 1, '1987-08-08', 'sofia.torres@gmail.com', 'Rua Ponte Velha, 1819',
+'Brasileiro'),
+ (9, 'Leonardo Costa', 'Tradutor', 1, '1984-09-09', 'leonardo.costa@yahoo.com', 'Rua Ponte Nova,
+2021', 'Brasileiro'),
+ (10, 'Marco Sánchez', 'Scout', 1, '1986-10-10', 'marco.sanchez@hotmail.com', 'Rua Val, 2223',
+Argentino);
+
+
+
+INSERT INTO Socios (id_socio, nome, clube_id, data_nascimento, email, endereco, nacionalidade)
+VALUES
+ (1, 'Maria da Silva', 1 ,'1985-01-15', 'maria.silva@gmail.com', 'Rua dos Cachorros, 123',
+'Brasileira'),
+ (2, 'João Santos', 1, '1982-03-22', 'joao.santos@hotmail.com', 'Rua da França, 456', 'Brasileiro'),
+ (3, 'Ana Souza', 1 , '1990-05-10', 'ana.souza@yahoo.com', 'Rua Enseada Carioca, 789', 'Brasileira'),
+ (4, 'Carlos Fernandes', 1 ,'1988-07-05', 'carlos.fernandes@gmail.com', 'Rua São Pedro, 1011',
+'Brasileiro'),
+ (5, 'Marta Oliveira', 1 ,'1986-09-18', 'marta.oliveira@yahoo.com', 'Rua dos Daleprani, 1213',
+'Brasileira'),
+ (6, 'Pedro Gomes', 1 ,'1987-11-30', 'pedro.gomes@gmail.com', 'Rua Francesco, 1415', 'Brasileiro'),
+ (7, 'Luisa Costa', 1 ,'1984-02-08', 'luisa.costa@hotmail.com', 'Rua Italia, 1617', 'Brasileira'),
+ (8, 'Ricardo Santos', 1 ,'1989-04-12', 'ricardo.santos@yahoo.com', 'Rua Espanha, 1819',
+'Brasileiro'),
+ (9, 'Fernanda Lima', 1 ,'1983-06-25', 'fernanda.lima@gmail.com', 'Rua Italia, 2021', 'Brasileira'),
+ (10, 'Gabriel Silva', 1 ,'1981-08-05', 'gabriel.silva@hotmail.com', 'Rua Italia, 2223', 'Brasileiro');
+
+
+
+
+INSERT INTO Jogadores (id_jogador, nome, clube_id , data_nascimento, email, endereco,
+nacionalidade, camisa, posicao)
+VALUES
+ (1, 'Arthur Daleprani', 1,'1990-01-15', 'carlos.silva@gmail.com', 'Rua Vila Nova, 123', 'Brasileiro',
+10, 'Goleiro'),
+ (2, 'João de Santos', 1,'1985-05-20', 'joao.santos@gmail.com', 'Rua Itália, 456', 'Português', 7,
+'Goleiro'),
+ (3, 'Pedro Daleprani', 1,'1988-02-10', 'pedro.oliveira@gmail.com', 'Rua Espanha, 789', 'Espanhol', 4,
+'Defensor'),
+ (4, 'Gabriel Barbosa', 1 ,'1992-11-05', 'marta.costa@gmail.com', 'Rua do Sol, 1011', 'Brasileira', 9,
+'Atacante'),
+ (5, 'Renato Augusto', 1 , '1989-07-18', 'fernando.santos@gmail.com', 'Rua França, 1213',
+'Argentino', 6, 'Meio-Campista'),
+ (6, 'Lucas Silva', 1 ,'1993-04-02', 'luisa.oliveira@gmail.com', 'Rua Vila Nova, 1415', 'Brasileira', 3,
+'Defensor'),
+ (7, 'Renato Porto', 1 , '1991-09-30', 'ricardo.silva@gmail.com', 'Rua Itália, 1617', 'Uruguaio', 8,
+'Meio-Campista'),
+ (8, 'Camilo Costa', 1 , '1987-03-12', 'camila.costa@gmail.com', 'Rua Espanha, 1819', 'Brasileira', 5,
+'Defensor'),
+ (9, 'Lucas Di Rossi', 1 , '1994-06-25', 'lucas.santos@gmail.com', 'Rua do Sol, 2021', 'Italiano', 11,
+'Atacante'),
+ (10, 'Arthur Oliveira', 1 , '1990-08-05', 'isabela.oliveira@gmail.com', 'Rua França, 2223', 'Paraguaio',
+2, 'Defensor'),
+ (11, 'Diego Costa', 1 , '1986-12-18', 'diego.costa@gmail.com', 'Rua Vila Nova, 2425', 'Brasileiro', 7,
+'Meio-Campista'),
+ (12, 'Juliano Santos', 1 ,'1993-02-28', 'juliana.santos@gmail.com', 'Rua Itália, 2627', 'Português', 10,
+'Atacante'),
+ (13, 'Sergio Ramos', 1 ,'1989-05-10', 'rafael.oliveira@gmail.com', 'Rua Espanha, 2829', 'Espanhol',
+6, 'Meio-Campista'),
+ (14, 'Gabriel Del Silva', 1 , '1991-07-24', 'gabriela.silva@gmail.com', 'Rua do Sol, 3031', 'Argentino',
+11, 'Atacante'),
+ (15, 'Hugo Perez', 1 , '1990-03-07', 'hugo.perez@gmail.com', 'Rua França, 3233', 'Uruguaio', 9,
+'Atacante'),
+ (16, 'Mário Rossi', 1 , '1988-09-20', 'mario.rossi@gmail.com', 'Rua Vila Nova, 3435', 'Italiano', 7,
+'Meio-Campista'),
+ (17, 'Roberto Hernandez', 1 , '1993-11-13', 'roberto.hernandez@gmail.com', 'Rua Itália, 3637',
+'Espanhol', 4, 'Defensor'),
+ (18, 'André Almeida', 1 ,'1989-04-26', 'andre.almeida@gmail.com', 'Rua Espanha, 3839',
+'Português', 8, 'Meio-Campista'),
+ (19, 'Diego Lopez', 1 , '1992-06-09', 'diego.lopez@gmail.com', 'Rua do Sol, 4041', 'Uruguaio', 6,
+'Meio-Campista'),
+ (20, 'Fabio Barbosa', 1 ,'1987-08-22', 'fabio.barbosa@gmail.com', 'Rua França, 4243', 'Italiano', 3,
+'Defensor'),
+ (21, 'Pedro Gonzalez', 1 ,'1991-10-15', 'pedro.gonzalez@gmail.com', 'Rua Vila Nova, 4445',
+'Espanhol', 9, 'Atacante'),
+ (22, 'Alexandro Silva', 1 , '1990-12-28', 'alex.silva@gmail.com', 'Rua Itália, 4647', 'Brasileiro', 5,
+'Defensor'),
+ (23, 'Luciano Fiori', 1 , '1988-02-11', 'luciano.rossi@gmail.com', 'Rua Espanha, 4849', 'Italiano', 10,
+'Atacante'),
+ (24, 'Mario Pestano', 1,'1993-04-24', 'maria.sanchez@gmail.com', 'Rua do Sol, 5051', 'Argentino', 8,
+'Meio-Campista');
+
+
+
+INSERT INTO estadio (id_estadio, nome, capacidade, data_inauguracao, clube_id, localizacao)
+VALUES (1, 'Estádio Da Vila', 30000, '1994-06-02', 1, 'Itaparica');
+
+
+
+
+INSERT INTO Partidas (id_partida, id_clube, data, local, adversario, placar_time_casa,
+placar_time_visitante)
+VALUES
+ (1, 1, '2023-01-10', 'Estádio da Vila', 'Real Noroeste', 3, 1),
+ (2, 1, '2023-01-15', 'Estádio Visitante', 'Vitória', 2, 2),
+ (3, 1, '2023-01-20', 'Estádio da Vila', 'Serra', 1, 0),
+ (4, 1, '2023-01-25', 'Estádio Visitante', 'Venda Nova', 2, 1),
+ (5, 1, '2023-02-01', 'Estádio da Vila', 'Porto Vitória', 3, 2),
+ (6, 1, '2023-02-05', 'Estádio Visitante', 'Rio Branco', 0, 1),
+ (7, 1, '2023-02-10', 'Estádio da Vila', 'Desportiva Ferroviária', 1, 0),
+ (8, 1, '2023-02-15', 'Estádio Visitante', 'Vilavelhense', 2, 2),
+ (9, 1, '2023-02-20', 'Estádio da Vila', 'Atlético Itapemirim', 3, 1),
+ (10, 1, '2023-02-25', 'Estádio Visitante', 'Estrela do Norte', 2, 0),
+ (11, 1, '2023-03-02', 'Estádio da Vila', 'Estrela do Norte', 1, 1),
+ (12, 1, '2023-03-07', 'Estádio Visitante', 'Atlético Itapemirim', 0, 2),
+ (13, 1, '2023-03-12', 'Estádio da Vila', 'Vilavelhense', 2, 3),
+ (14, 1, '2023-03-17', 'Estádio Visitante', 'Desportiva Ferroviária', 1, 1),
+ (15, 1, '2023-03-22', 'Estádio da Vila', 'Rio Branco', 3, 0),
+ (16, 1, '2023-03-27', 'Estádio Visitante', 'Porto Vitória', 2, 1),
+ (17, 1, '2023-04-01', 'Estádio da Vila', 'Venda Nova', 1, 1),
+ (18, 1, '2023-04-06', 'Estádio Visitante', 'Serra', 0, 2),
+ (19, 1, '2023-04-11', 'Estádio da Vila', 'Vitória', 2, 0),
+ (20, 1, '2023-04-16', 'Estádio Visitante', 'Real Noroeste', 3, 2);

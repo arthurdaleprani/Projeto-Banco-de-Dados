@@ -1,4 +1,4 @@
-CREATE INDEX idx_email_funcionarios ON Funcionarios (email);*/
-CREATE INDEX idx_clube_posicao_jogadores ON Jogadores (clube_id, posicao);*/
-CREATE INDEX idx_cargo_comissaotecnica ON ComissaoTecnica (cargo);*/
-CREATE INDEX idx_partidas_adversaios ON partidas (adversario);*/
+CREATE INDEX idx_email_funcionarios ON Funcionarios (email);
+CREATE INDEX idx_clube_posicao_jogadores ON Jogadores (clube_id, posicao);
+CREATE INDEX idx_cargo_comissaotecnica ON ComissaoTecnica (cargo);
+CREATE INDEX idx_partidas_adversaios ON partidas (adversario);
